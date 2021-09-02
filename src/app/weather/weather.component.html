@@ -1,0 +1,41 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+          <h3 class="text-center my-4">Search for Weather:</h3>          
+            <form [formGroup]="weatherSearchForm" (ngSubmit)="sendToAPI(weatherSearchForm.value)">
+                <div class="form-group">
+                    <input
+                    class="form-control"
+                    type="text"
+                    id="weatherLocation"
+                    aria-describedby="weatherLocation"
+                    placeholder="Please input a Capital"
+                    formControlName="location"
+                    />
+                </div>
+                <div class="text-center"> 
+                    <button type="submit" class="btn btn-success btn-md">Search for the weather</button>
+                </div>
+            </form> 
+        </div>
+        <div class="col-md-6">
+            <h3 class="text-center my-4">Weather Details:</h3>
+            <p class="text-center">
+                Current weather conditions: {{ this.weatherData?.weather[0].description }}
+            </p>
+            <p class="text-center">
+                Temperature in Kelvin: {{ this.weatherData?.main.temp }}
+            </p>
+            <p class="text-center">
+                Precipitation: {{ this.weatherData?.main.humidity }} %
+            </p>
+            <p class="text-center">
+                Wind Data=> 
+                Speed: {{ this.weatherData?.wind.speed }} Deg: {{ this.weatherData?.wind.deg }} Gust: {{ this.weatherData?.wind.gust }}
+            </p>
+            <p class="text-center">
+                Capital Searched: {{ this.weatherData?.name }}
+            </p>
+        </div>
+    </div>
+</div>
