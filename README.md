@@ -1,6 +1,6 @@
 # WeatherApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.3.
+This project tells us weather conditions of a capital of any country.
 
 ## How to run this project on your machine
 a.
@@ -13,7 +13,7 @@ b.
 2. Open terminal (linux users) or command prompt as administrator (windows users) and type the command **npm install -g @angular/cli** and hit enter. This will install Angular CLI.
 
 c.
-Open gitbash inside "weather-app" folder and type the command **ng serve --o**. This will open a link in your browser. Type the name of capital for which you want to get weather data.
+Open gitbash inside "weather-app" folder and type the command **ng serve --o**. This will open a link in your browser. Type the name of capital (eg-kabul) for which you want to get weather data.
 
 If the above steps did not work out for you, watch this video https://www.youtube.com/watch?v=k5E2AVpwsko from 8 minutes 48 seconds till 11 minutes 20 seconds.
 
